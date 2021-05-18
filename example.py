@@ -1,9 +1,12 @@
+from time import time
+from os import urandom
 from hashregate import MerkleTree
 
 def run_tree():
-	txs = [b'hello', b'there', b'you', b'king', b'no', b'bueno', b'tango', b'vial']
+	txs = [urandom(128) for i in range(4096)]
+	start = time()
 	mt = MerkleTree(txs)
-	print(mt.tree[0].hex())
+	print(f'{mt.tree[0].hex()}\nRoot hash generated in {time() - start} seconds')
 
 if __name__ == "__main__":
 	run_tree()
