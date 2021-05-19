@@ -1,8 +1,8 @@
 ## Description
-Hashregate is a Python implmentation of a [Merkle hash tree](https://en.wikipedia.org/wiki/Merkle_tree). Currently, the structure only work for transaction sizes in powers of two.
+Hashregate is a Python implmentation of a [Merkle hash tree](https://en.wikipedia.org/wiki/Merkle_tree).
 
 ## Example
-Here we will hash a Merkle tree containing 4096 distinct 128 byte transactions.
+Let's hash a Merkle tree containing 4096 distinct 128 byte transactions.
 
 ```bash
 $ python example.py
