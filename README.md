@@ -15,8 +15,6 @@ To compute the checksum initially, all transactions are loaded into the lowest l
 ## Example
 Let's hash a Merkle tree containing 4096 distinct 64 byte transactions (contained in the example.py file).
 
-```bash
-$ python example.py
-```
+    $ python example.py
     4ecb0d3a67c8762d5a4e40bf5f8650354477948abff170f37910576a058ea12d
     Root hash generated in 0.015070676803588867 seconds
